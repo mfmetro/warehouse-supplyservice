@@ -25,13 +25,13 @@ $ docker run -d -p 8080:8080 metro/supplyservice
 # use docker ps to find out your container's id
 $ docker ps
 CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS              PORTS                     NAMES
-1a06b1c64d3e        metro/supplyservice   "/bin/sh -c 'java -j…"   2 minutes ago       Up 2 minutes        0.0.0.0:8081->8081/tcp   eager_davinci
+1a06b1c64d3e        metro/supplyservice   "/bin/sh -c 'java -j…"   2 minutes ago       Up 2 minutes        0.0.0.0:8083->8083/tcp   eager_davinci
 
 # show logs (you will see that some articles and supply deliveries already have been created)
 $ docker logs 1a06
 ```
 
-As soon as the container is running, you can access the Swagger UI for the SupplyService via `http://localhost:8081/swagger-ui.html` in your browser.
+As soon as the container is running, you can access the Swagger UI for the SupplyService via `http://localhost:8083/swagger-ui.html` in your browser.
 
 ```bash
 # stop container
